@@ -1,2 +1,0 @@
-# projectcuoiki
-bài cuối kì
