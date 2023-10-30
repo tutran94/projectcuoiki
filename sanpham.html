@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 <body>
-    <nav class="bg-gray-100 sticky top-0">
-        <div class="container mx-auto flex justify-between h-20 items-center">
+    <!--Nav bar-->
+    <nav class="bg-black sticky top-0">
+        <div class="container mx-auto flex justify-between h-20 items-center text-white">
             <div class="flex">
                 <!-- <img src="./bRook.png" alt="" class="w-20 bg-white rounded-full"> -->
                 <div class="text-2xl font-bold text-center align-middle h-full">
@@ -19,6 +21,7 @@
                 <div class="ml-6 hover:text-blue-400">Home</div>
                 <div class="ml-6 hover:text-blue-400">Boat</div>
                 <div class="ml-6 hover:text-blue-400">Yatch</div>
+                <div class="ml-6 hover:text-blue-400">Blog</div>
                 <div class="ml-6 hover:text-blue-400">Contact</div>
                 <div class="ml-6 hover:text-blue-400">
                     <i class="fas fa-search"></i>
@@ -26,43 +29,50 @@
             </div>
         </div>
     </nav>
-    <div class="container mx-auto grid grid-cols-4 gap-4 py-4">
-        <select name="" id="brand" class="bg-gray-100 rounded-full py-2 pl-2">
-            <option value="null">Select Origin</option>
-            <option value="france">France</option>
-            <option value="usa">USA</option>
-            <option value="britain">Britain</option>
-            <option value="italia">Italia</option>
-            <option value="canada">Canada</option>
-            <option value="spain">Spain</option>
-            <option value="russia">Russia</option>
-        </select>
-        <select name="" id="" class="bg-gray-100 rounded-full py-2 pl-2">
-            <option value="null">Select Kind</option>
-            <option value="yatch">Yatch</option>
-            <option value="boat">Boat</option>
-        </select>
-        <select name="" id="" class="bg-gray-100 rounded-full py-2 pl-2">
-            <option value="volvo">Select Length</option>
-            <option value="volvo">< 5m</option>
-            <option value="saab">5m ~ 10m</option>
-            <option value="opel">10m ~ 20m</option>
-            <option value="audi">> 20m</option>
-        </select>
-        <button type="button" class="text-white bg-orange-400 hover:bg-orange-600 rounded-full py-2 row-span-2">
-            FIND
-        </button>
-        <select name="" id="" class="bg-gray-100 rounded-full py-2 pl-2">
-            <option value="volvo">Select Price</option>
-            <option value="volvo">< 100000$</option>
-            <option value="saab">100000$ ~ 500000$</option>
-            <option value="opel">500000$ ~ 1000000$</option>
-            <option value="audi">>1000000$</option>
-        </select>
-        <input type="text" placeholder="Search your yatch name here" class="border border-gray-300 col-span-2 rounded-full pl-2">
+    <!--Nav bar end-->
+    <!--Search query-->
+    <div  class="border-b border-gray-300 sticky top-20 bg-white">
+        <div class="container mx-auto grid grid-cols-4 gap-4 py-4">
+            <select name="" id="brand" class="bg-gray-100 rounded-full py-2 pl-2">
+                <option value="null">Select Origin</option>
+                <option value="france">France</option>
+                <option value="usa">USA</option>
+                <option value="britain">Britain</option>
+                <option value="italia">Italia</option>
+                <option value="canada">Canada</option>
+                <option value="spain">Spain</option>
+                <option value="russia">Russia</option>
+            </select>
+            <select name="" id="" class="bg-gray-100 rounded-full py-2 pl-2">
+                <option value="null">Select Kind</option>
+                <option value="yatch">Yatch</option>
+                <option value="boat">Boat</option>
+            </select>
+            <select name="" id="" class="bg-gray-100 rounded-full py-2 pl-2">
+                <option value="volvo">Select Length</option>
+                <option value="volvo">< 5m</option>
+                <option value="saab">5m ~ 10m</option>
+                <option value="opel">10m ~ 20m</option>
+                <option value="audi">> 20m</option>
+            </select>
+            <button type="button" class="text-white bg-black hover:bg-orange-600 rounded-full py-2 row-span-2 text-xl font-bold">
+                FIND
+            </button>
+            <select name="" id="" class="bg-gray-100 rounded-full py-2 pl-2">
+                <option value="volvo">Select Price</option>
+                <option value="volvo">< 100000$</option>
+                <option value="saab">100000$ ~ 500000$</option>
+                <option value="opel">500000$ ~ 1000000$</option>
+                <option value="audi">>1000000$</option>
+            </select>
+            <input type="text" placeholder="Search your yatch name here" class="border border-gray-300 col-span-2 rounded-full pl-2">
+        </div>
     </div>
+    <!--Search query end-->
+    <!--Display section-->
     <section class="flex flex-row">
         <div class="container mx-auto">
+            <!--San pham-->
             <div class="text-center text-2xl font-bold py-4 font-mulish">
                 FIND YOUR DESIRE YATCH HERE
             </div>
@@ -146,6 +156,8 @@
                     </div>
                 </div>
             </div>
+            <!--san pham end-->
+            <!--Pagination-->
             <div class="flex items-center mb-4 mt-2 justify-between">
                 <div>
                     Result from 1 to 8
@@ -195,8 +207,11 @@
                     </ul>
                 </nav>
             </div>
+            <!--Pagination end-->
         </div>
     </section>
+    <!--Display section end-->
+    <!--Footer-->
     <footer class="bg-gray-400">
         <div class="flex flex-col">
             <div class="container mx-auto flex items-center py-8">
@@ -297,5 +312,6 @@
             </div>
         </div>
     </footer>
+    <!--Footer end-->
 </body>
 </html>
